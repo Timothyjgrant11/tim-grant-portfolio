@@ -14,12 +14,16 @@ export function SubstackEmbed({
 }: SubstackEmbedProps) {
   return (
     <div className="overflow-hidden rounded-lg border hairline bg-paper-raised">
-      <div className="substack-post-embed">
-        <p lang="en">
+      <div className="substack-post-embed p-5">
+        <p lang="en" className="text-sm text-ink-soft">
           {title} by {author}
         </p>
-        <a data-post-link href={url}>
-          Read on Substack
+        <a
+          data-post-link
+          href={url}
+          className="mt-2 inline-block text-sm text-accent underline underline-offset-4"
+        >
+          Read on Substack ↗
         </a>
       </div>
       <Script
