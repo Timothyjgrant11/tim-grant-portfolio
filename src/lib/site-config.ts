@@ -11,6 +11,7 @@ export const siteConfig = {
     { href: "/", label: "Home" },
     { href: "/investigations", label: "Investigations" },
     { href: "/writing", label: "Writing" },
+    { href: "/art", label: "Art" },
     { href: "/about", label: "About" },
   ],
 };
