@@ -20,7 +20,7 @@ export default async function WritingPage() {
       <p className="mt-4 max-w-xl text-ink-soft">
         Essays and investigations are published on{" "}
         <a
-          href={siteConfig.substackProfileUrl}
+          href={siteConfig.substackHomeUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="text-accent underline underline-offset-4"
