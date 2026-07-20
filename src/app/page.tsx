@@ -80,7 +80,7 @@ export default async function Home() {
           <p className="mt-8 text-ink-soft">
             New essays are landing soon on{" "}
             <a
-              href={siteConfig.substackProfileUrl}
+              href={siteConfig.substackHomeUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent underline underline-offset-4"
