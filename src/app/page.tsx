@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getSubstackPosts } from "@/lib/substack";
 import { siteConfig } from "@/lib/site-config";
+import { featuredPosts } from "@/data/featured-posts";
+import { SubstackEmbed } from "@/components/substack-embed";
 
 export default async function Home() {
   const posts = await getSubstackPosts(3);
@@ -76,6 +78,12 @@ export default async function Home() {
               </li>
             ))}
           </ul>
+        ) : featuredPosts.length > 0 ? (
+          <div className="mt-8 grid gap-6 sm:grid-cols-3">
+            {featuredPosts.slice(0, 3).map((post) => (
+              <SubstackEmbed key={post.url} url={post.url} title={post.title} />
+            ))}
+          </div>
         ) : (
           <p className="mt-8 text-ink-soft">
             New essays are landing soon on{" "}

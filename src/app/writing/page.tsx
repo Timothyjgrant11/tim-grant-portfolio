@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { getSubstackPosts } from "@/lib/substack";
 import { siteConfig } from "@/lib/site-config";
+import { featuredPosts } from "@/data/featured-posts";
+import { SubstackEmbed } from "@/components/substack-embed";
 
 export const metadata: Metadata = {
   title: `Writing — ${siteConfig.name}`,
@@ -56,6 +58,12 @@ export default async function WritingPage() {
             </li>
           ))}
         </ul>
+      ) : featuredPosts.length > 0 ? (
+        <div className="mt-12 space-y-6">
+          {featuredPosts.map((post) => (
+            <SubstackEmbed key={post.url} url={post.url} title={post.title} />
+          ))}
+        </div>
       ) : (
         <div className="mt-12 rounded-lg border hairline bg-paper-raised p-8 text-center">
           <p className="text-ink-soft">
