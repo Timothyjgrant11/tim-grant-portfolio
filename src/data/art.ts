@@ -10,6 +10,7 @@ export const sketches: Sketch[] = [
   { id: "8E1HZ5JUk", title: "Void", embedUrl: "https://editor.p5js.org/Timothyjgrant11/full/8E1HZ5JUk" },
   { id: "Dg-Fruy_d", title: "Glitch", embedUrl: "https://editor.p5js.org/Timothyjgrant11/full/Dg-Fruy_d" },
   { id: "Ztcg0TrGk", title: "Spiral Song", embedUrl: "https://editor.p5js.org/Timothyjgrant11/full/Ztcg0TrGk" },
+  { id: "OdxLf7vzB", title: "Collision", embedUrl: "https://editor.p5js.org/Timothyjgrant11/full/OdxLf7vzB" },
 ];
 
 export const encryptionRitual = {
